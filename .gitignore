@@ -1,0 +1,36 @@
+# ─────────────────────────────────────────────────────────────
+# Rahasia / data lokal — JANGAN pernah di-upload ke repo
+# ─────────────────────────────────────────────────────────────
+.env                # berisi GEMINI_API_KEY
+session.json        # cookie sesi login UT
+rate_usage.json     # hitungan pemakaian harian (lokal)
+
+# ─────────────────────────────────────────────────────────────
+# Hasil build PyInstaller — besar & regenerasi otomatis
+# (termasuk dist/ yang bisa memuat .env & session.json rahasia)
+# ─────────────────────────────────────────────────────────────
+build/
+dist/
+*.zip
+
+# ─────────────────────────────────────────────────────────────
+# Artefak & cache Python
+# ─────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ─────────────────────────────────────────────────────────────
+# Playwright
+# ─────────────────────────────────────────────────────────────
+playwright-report/
+test-results/
+
+# ─────────────────────────────────────────────────────────────
+# OS
+# ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
