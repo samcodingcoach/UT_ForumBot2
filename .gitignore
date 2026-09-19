@@ -2,6 +2,7 @@
 # Rahasia / data lokal — JANGAN pernah di-upload ke repo
 # ─────────────────────────────────────────────────────────────
 .env                # berisi GEMINI_API_KEY
+.env.example
 session.json        # cookie sesi login UT
 rate_usage.json     # hitungan pemakaian harian (lokal)
 
